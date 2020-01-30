@@ -134,15 +134,15 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: 'Raleway', sans-serif;
+  color: #23293B;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   color: #23293B;
 }
 h1 {
@@ -162,10 +162,21 @@ nav {
   height: 5vh;
   width: 100%;
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+nav div {
+  min-width: 35vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .home {
-  height: 100vh;
-  background-color: wheat;
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,15 +186,60 @@ nav {
   width: 50vw;
   height: 30vh;
 }
+.about {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  background-color: #8ABAD3FF;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 5rem;
+}
+.about .about-text {
+  width: 60%;
+}
+.about .about-image {
+  width: 30vw;
+  height: 60vh;
+}
+.about .about-image img {
+  width: 100%;
+  height: 100%;
+}
+.projects-page {
+  min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+}
 .projects {
-  height: 100vh;
-  background-color: turquoise;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: initial;
+}
+.projects .project {
+  max-width: 43vw;
+  max-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+.projects .project .project-image {
+  height: 50%;
+}
+.projects .project .project-image img {
+  height: 100%;
+  width: 100%;
 }
 .contact {
   height: 50vh;
-  background-color: grey;
+  background-color: #EDC2D8FF;
+  text-align: center;
 }
 footer {
   height: 5vh;
-  background-color: wheat;
+  background-color: gray;
 }

@@ -5,30 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
     <link href="css/index.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <nav class='nav-bar'>
-        <a>Home</a>
-        <a>Projects</a>
-        <a>Contact</a>
+        <div>
+            <a><p>Home</p></a>
+            <a><p>About</p></a>
+            <a><p>Projects</p></a>
+            <a><p>Contact</p></a>
+        </div>
     </nav>
-    <section class='home'>
-        <div><h2 class='header-text'>Hello, I'm Dimeji Lawal-Are.</h2><h2>A Full Stack Developer.</h2></div>
+    <header class='home'>
+        <div><h2 class='header-text text1'>Hello, I'm Dimeji Lawal-Are.</h2><h2 class="text2">A Full Stack Developer.</h2></div>
+    </header>
+    <section class='about'>
+        <div class='about-image'>
+            <img src='./assets/images/dog.jpeg' alt='profile picture'/>
+        </div>
+        <div class='about-text'>
+            <div class='overview'></div>
+            <h2>About Me</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <div class='skills'>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Html/CSS</li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <section class='projects'>
-        <h1>Project Section</h1>
+    <section class='projects-page'>
+        <h2>Projects</h2>
+        <div class='projects'>
+            <div class='project'>
+                <div class='project-image'><img src='./assets/images/dog.jpeg' alt='profile picture'/></div>
+                <h1 class='title'>Project Name</h1>
+                <div class='project-overview'>A good project</div>
+                <div class='project-link'>view on github</div>
+            </div>
+            <div class='project'>
+                <div class='project-image'><img src='./assets/images/dog.jpeg' alt='profile picture'/></div>
+                <h1 class='title'>Project Name</h1>
+                <div class='project-overview'>A good project</div>
+                <div class='project-link'>view on github</div>
+            </div>
+            <div class='project'>
+                <div class='project-image'><img src='./assets/images/dog.jpeg' alt='profile picture'/></div>
+                <h1 class='title'>Project Name</h1>
+                <div class='project-overview'>A good project</div>
+                <div class='project-link'>view on github</div>
+            </div>
+            <div class='project'>
+                <div class='project-image'><img src='./assets/images/dog.jpeg' alt='profile picture'/></div>
+                <h1 class='title'>Project Name</h1>
+                <div class='project-overview'>A good project</div>
+                <div class='project-link'>view on github</div>
+            </div>
+
+        </div>
     </section>
     <section class='contact'>
-        <h1>Contact Section</h1>
+        <h1>Contact</h1>
     </section>
     <footer>
         <p>This is a footer</p>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src='./javascript/header.js'></script>
 </body>
 
 </html>
