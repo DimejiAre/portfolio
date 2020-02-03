@@ -25,15 +25,35 @@
         justify-content: space-between;
         margin: 2rem 0;
         //padding: 2rem;
+
+        a {
+            text-decoration: none;
+        }
+
+        .title, .project-overview, .tech-stack, .project-link {
+            border-bottom: 1px solid black;
+            padding-bottom: 1rem;
+        }
+
+        .project-link{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
         
 
         .project-image {
             height: 50%;
+        }
 
-            img {
-                height: 100%;
-                width: 100%;
-            }
+        .github-image {
+            max-height: 10%;
+            max-width: 10%;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
         }
     }
 }

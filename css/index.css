@@ -158,6 +158,10 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+hr {
+  border-top: 1px solid #8c8b8b;
+  margin: 0.5em 0;
+}
 nav {
   height: 5vh;
   width: 100%;
@@ -368,10 +372,29 @@ nav div {
   justify-content: space-between;
   margin: 2rem 0;
 }
+.projects .project a {
+  text-decoration: none;
+}
+.projects .project .title,
+.projects .project .project-overview,
+.projects .project .tech-stack,
+.projects .project .project-link {
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
+}
+.projects .project .project-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 .projects .project .project-image {
   height: 50%;
 }
-.projects .project .project-image img {
+.projects .project .github-image {
+  max-height: 10%;
+  max-width: 10%;
+}
+.projects .project img {
   height: 100%;
   width: 100%;
 }
