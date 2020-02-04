@@ -161,6 +161,9 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+a {
+  text-decoration: none;
+}
 hr {
   border-top: 1px solid #8c8b8b;
   margin: 0.5em 0;
@@ -175,11 +178,24 @@ nav {
   top: 0;
   background-color: white;
 }
+@media (max-width: 763px) {
+  nav {
+    justify-content: center;
+  }
+}
 nav div {
   min-width: 35vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+nav div a {
+  color: initial;
+}
+@media (max-width: 763px) {
+  nav div {
+    min-width: 50vw;
+  }
 }
 .home {
   min-height: 95vh;
@@ -329,6 +345,11 @@ nav div {
   padding: 5rem;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .about {
+    flex-direction: column;
+  }
+}
 .about h1,
 .about h2 {
   padding: 2rem 0;
@@ -336,20 +357,67 @@ nav div {
 .about .about-text {
   width: 60%;
 }
+@media (max-width: 500px) {
+  .about .about-text {
+    width: 100%;
+  }
+}
 .about .about-text .overview {
-  padding: 5rem 0;
+  padding-bottom: 5rem;
 }
 .about .about-text .skills {
   padding: 5rem 0;
 }
-.about .about-text .skills ul {
-  list-style-type: disc;
-  padding-left: 2rem;
+.about .about-text .skills ul li {
+  padding-bottom: 1rem;
+}
+.about .about-text .skills ul li div {
+  background-color: greenyellow;
+  height: 2.5rem;
+  padding: 0.3rem;
+  padding-left: 1rem;
+  text-transform: uppercase;
+}
+.about .about-text .skills #javascript {
+  background-color: greenyellow;
+  width: 50%;
+}
+.about .about-text .skills #react {
+  background-color: lavender;
+  width: 60%;
+}
+.about .about-text .skills #express {
+  background-color: lightpink;
+  width: 40%;
+}
+.about .about-text .skills #nodejs {
+  background-color: mediumturquoise;
+  width: 60%;
+}
+.about .about-text .skills #mongodb {
+  background-color: peachpuff;
+  width: 60%;
+}
+.about .about-text .skills #postgresql {
+  background-color: tomato;
+  width: 50%;
+}
+.about .about-text .skills #html-css {
+  background-color: yellow;
+  width: 40%;
 }
 .about .about-image {
-  width: 30vw;
+  width: 25vw;
   height: 60vh;
-  border-radius: 6rem;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .about .about-image {
+    width: 100%;
+  }
 }
 .about .about-image img {
   width: 100%;
@@ -379,6 +447,12 @@ nav div {
   flex-wrap: wrap;
   text-align: initial;
 }
+@media (max-width: 500px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .projects .project {
   max-width: 22vw;
   height: 65vh;
@@ -387,8 +461,17 @@ nav div {
   justify-content: space-between;
   margin: 2rem 0;
 }
-.projects .project a {
-  text-decoration: none;
+@media (max-width: 763px) {
+  .projects .project {
+    max-width: 45vw;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .projects .project {
+    max-width: 80vw;
+    margin-bottom: 2rem;
+  }
 }
 .projects .project .title,
 .projects .project .project-overview,
@@ -421,6 +504,11 @@ nav div {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .contact {
+    height: 50vh;
+  }
+}
 .contact h1 {
   padding: 2rem 0;
 }
@@ -437,8 +525,4 @@ nav div {
 .contact img {
   height: 5rem;
   width: 5rem;
-}
-footer {
-  height: 5vh;
-  background-color: gray;
 }

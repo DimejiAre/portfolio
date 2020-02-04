@@ -16,6 +16,11 @@
     flex-wrap: wrap;
     text-align: initial;
 
+    @media @phone {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .project {
         max-width: 22vw;
         height: 65vh;
@@ -26,8 +31,14 @@
         margin: 2rem 0;
         //padding: 2rem;
 
-        a {
-            text-decoration: none;
+        @media @tab {
+            max-width: 45vw;
+            margin-bottom: 2rem;
+        }
+
+        @media @phone {
+            max-width: 80vw;
+            margin-bottom: 2rem;
         }
 
         .title, .project-overview, .tech-stack, .project-link {

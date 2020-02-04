@@ -14,30 +14,30 @@
 <body>
     <nav class='nav-bar'>
         <div>
-            <a>
+            <a href="#home">
                 <p>Home</p>
             </a>
-            <a>
+            <a href="#about">
                 <p>About</p>
             </a>
-            <a>
+            <a href="#projects">
                 <p>Projects</p>
             </a>
-            <a>
+            <a href="#contact">
                 <p>Contact</p>
             </a>
         </div>
     </nav>
-    <header class='home'>
+    <header class='home' id='home'>
         <div classs='header-text'>
             <h1 class='text1'>Hello, I'm Dimeji Lawal-Are.</h1>
             <h1 class="text2">A Full Stack Developer.</h1>
         </div>
         <div class='home-arrow bounce-top'><img class='bounce-top' src='./assets/icons/angle-down-solid.svg' /></div>
     </header>
-    <section class='about'>
+    <section class='about' id='about'>
         <div class='about-image'>
-            <img src='./assets/images/dog.jpeg' alt='profile picture' />
+            <img src='./assets/images/me.png' alt='profile picture' />
         </div>
         <div class='about-text'>
             <div class='overview'>
@@ -48,14 +48,18 @@
             <div class='skills'>
                 <h2>Skills</h2>
                 <ul>
-                    <li>Javascript</li>
-                    <li>React</li>
-                    <li>Html/CSS</li>
+                    <li><div id='nodejs'>Node JS</div></li>
+                    <li><div id='javascript'>Javascript</div></li>
+                    <li><div id='react'>React</div></li>
+                    <li><div id='mongodb'>Mongo DB</div></li>
+                    <li><div id='postgresql'>PostgreSQL</div></li>
+                    <li><div id='express'>Express</div></li>
+                    <li><div id='html-css'>HTML/CSS</div></li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class='projects-page'>
+    <section class='projects-page' id='projects'>
         <h1>Projects</h1>
         <div class='projects'>
             <div class='project'>
@@ -105,7 +109,7 @@
 
         </div>
     </section>
-    <section class='contact'>
+    <section class='contact' id='contact'>
         <h1>Want to Reach out?</h1>
         <h4>Find me on the web</h4>
         <div class='social-icons'>
