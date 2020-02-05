@@ -177,8 +177,8 @@ nav {
   position: sticky;
   z-index: 1;
   top: 0;
-  background-color: #494ca2;
-  padding: 3rem 0;
+  background-color: #e3e7f1;
+  padding: 2.5rem 0;
 }
 @media (max-width: 763px) {
   nav {
@@ -192,10 +192,10 @@ nav div {
   align-items: center;
 }
 nav div a {
-  color: white;
+  color: black;
 }
 nav div a:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #8186d5;
 }
 @media (max-width: 763px) {
   nav div {
@@ -210,10 +210,10 @@ nav div a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #8186d5;
+  background-color: #e3e7f1;
 }
 .home h1 {
-  color: white;
+  color: black;
 }
 .home .header-text {
   width: 50vw;
@@ -349,7 +349,7 @@ nav div a:hover {
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
-  background-color: #494ca2;
+  background-color: #8186d5;
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 5rem;
@@ -446,7 +446,7 @@ nav div a:hover {
   min-width: 100vw;
   text-align: center;
   font-size: 1.6rem;
-  background-color: #c6cbef;
+  background-color: #e3e7f1;
 }
 .projects-page h1,
 .projects-page h2 {
@@ -489,7 +489,7 @@ nav div a:hover {
 .projects .project .project-overview,
 .projects .project .tech-stack,
 .projects .project .project-link {
-  border-bottom: 1px solid #494ca2;
+  border-bottom: 1px solid #8186d5;
   padding-bottom: 1rem;
 }
 .projects .project .project-link {
@@ -510,7 +510,7 @@ nav div a:hover {
 }
 .contact {
   height: 40vh;
-  background-color: #494ca2;
+  background-color: #8186d5;
   color: white;
   text-align: center;
   display: flex;
