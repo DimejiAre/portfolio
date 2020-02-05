@@ -175,8 +175,10 @@ nav {
   flex-direction: row-reverse;
   justify-content: right;
   position: sticky;
+  z-index: 1;
   top: 0;
-  background-color: white;
+  background-color: #e3e7f1;
+  padding: 2.5rem 0;
 }
 @media (max-width: 763px) {
   nav {
@@ -184,13 +186,16 @@ nav {
   }
 }
 nav div {
-  min-width: 35vw;
+  min-width: 45vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 nav div a {
-  color: initial;
+  color: black;
+}
+nav div a:hover {
+  border-bottom: 3px solid #8186d5;
 }
 @media (max-width: 763px) {
   nav div {
@@ -205,6 +210,10 @@ nav div a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: #e3e7f1;
+}
+.home h1 {
+  color: black;
 }
 .home .header-text {
   width: 50vw;
@@ -336,10 +345,11 @@ nav div a {
   }
 }
 .about {
+  color: white;
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
-  background-color: #8ABAD3FF;
+  background-color: #8186d5;
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 5rem;
@@ -353,6 +363,7 @@ nav div a {
 .about h1,
 .about h2 {
   padding: 2rem 0;
+  color: white;
 }
 .about .about-text {
   width: 60%;
@@ -370,6 +381,7 @@ nav div a {
 }
 .about .about-text .skills ul li {
   padding-bottom: 1rem;
+  color: black;
 }
 .about .about-text .skills ul li div {
   background-color: greenyellow;
@@ -408,20 +420,19 @@ nav div a {
 }
 .about .about-image {
   width: 25vw;
-  height: 60vh;
+  height: 40vh;
   border-radius: 5rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   overflow: hidden;
+  background-image: url('../assets/images/me.png');
+  background-size: cover;
 }
 @media (max-width: 500px) {
   .about .about-image {
     width: 100%;
   }
-}
-.about .about-image img {
-  width: 100%;
-  height: 100%;
 }
 .rotate90 {
   -webkit-transform: rotate(90deg);
@@ -435,6 +446,7 @@ nav div a {
   min-width: 100vw;
   text-align: center;
   font-size: 1.6rem;
+  background-color: #e3e7f1;
 }
 .projects-page h1,
 .projects-page h2 {
@@ -477,7 +489,7 @@ nav div a {
 .projects .project .project-overview,
 .projects .project .tech-stack,
 .projects .project .project-link {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #8186d5;
   padding-bottom: 1rem;
 }
 .projects .project .project-link {
@@ -498,7 +510,8 @@ nav div a {
 }
 .contact {
   height: 40vh;
-  background-color: silver;
+  background-color: #8186d5;
+  color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -511,6 +524,10 @@ nav div a {
 }
 .contact h1 {
   padding: 2rem 0;
+  color: white;
+}
+.contact h4 {
+  color: white;
 }
 .contact .social-icons {
   padding: 4rem;
