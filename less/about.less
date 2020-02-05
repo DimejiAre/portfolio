@@ -1,8 +1,9 @@
 .about {
+    color: white;
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
-    background-color: #8ABAD3FF;
+    background-color: #494ca2;
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 5rem;
@@ -14,6 +15,7 @@
 
     h1, h2 {
         padding: 2rem 0;
+        color: white;
     }
 
     .about-text {
@@ -38,6 +40,7 @@
 
                 li {
                     padding-bottom: 1rem;
+                    color: black;
 
                     div {
                         //border: 1px solid black;
@@ -83,19 +86,17 @@
 
     .about-image {
         width: 25vw;
-        height: 60vh;
+        height: 40vh;
         border-radius: 5rem;
+        margin-top: 2rem;
         display: flex;
         align-items: center;
         overflow: hidden;
+        background-image: url('../assets/images/me.png');
+        background-size: cover;
 
         @media @phone {
             width: 100%;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
         }
     }
 }
