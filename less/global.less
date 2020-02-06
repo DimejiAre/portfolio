@@ -9,6 +9,11 @@ html {
   html, body {
     font-family: 'Raleway', sans-serif;
     color: @header-font-color;
+    scroll-snap-type: y mandatory;
+  }
+
+  .page {
+    scroll-snap-align: start;
   }
   
   h1, h2, h3, h4, h5 {
