@@ -41,12 +41,18 @@
                     padding-bottom: 1rem;
                     color: black;
 
+                    
+
                     div {
                         background-color: greenyellow;
                         height: 2.5rem;
                         padding: 0.3rem;
                         padding-left: 1rem;
                         text-transform: uppercase;
+
+                        &:hover{
+                            &.pulsate-fwd{-webkit-animation:pulsate-fwd .5s ease-in-out both;animation:pulsate-fwd .5s ease-in-out both}
+                        }
                     }
                 }
             }
