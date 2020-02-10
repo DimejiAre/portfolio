@@ -10,6 +10,10 @@ html {
     font-family: 'Raleway', sans-serif;
     color: @header-font-color;
     scroll-snap-type: y mandatory;
+
+    @media @phone {
+      scroll-snap-type: none;
+    }
   }
 
   .page {
@@ -38,7 +42,7 @@ html {
   }
   
   p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.4;
   }
 
