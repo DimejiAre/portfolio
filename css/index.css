@@ -224,10 +224,14 @@ nav div a:hover {
 }
 .home h1 {
   color: black;
+  padding-bottom: 2rem;
 }
 .home .header-text {
-  width: 50vw;
-  height: 30vh;
+  width: 65vw;
+}
+.home .header-text .text1,
+.home .header-text .text2 {
+  font-size: 5rem;
 }
 .home .home-arrow {
   width: 10vw;
