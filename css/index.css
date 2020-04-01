@@ -152,7 +152,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #23293B;
 }
 h1 {
@@ -187,7 +187,7 @@ nav {
   position: sticky;
   z-index: 1;
   top: 0;
-  background-color: #e3e7f1;
+  background-color: #2D3648;
   padding: 2.5rem 0;
 }
 @media (max-width: 763px) {
@@ -202,10 +202,10 @@ nav div {
   align-items: center;
 }
 nav div a {
-  color: black;
+  color: #ffac41;
 }
 nav div a:hover {
-  border-bottom: 3px solid #8186d5;
+  border-bottom: 3px solid #ffac41;
 }
 @media (max-width: 763px) {
   nav div {
@@ -220,14 +220,26 @@ nav div a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #e3e7f1;
+  background-image: url('../assets/images/abstract-art-black-background-blur-1040499.jpg');
+  background-size: cover;
+  background-color: #2D3648;
 }
-.home h1 {
-  color: black;
+.home h1,
+.home h2 {
+  color: #ffac41;
+  padding-bottom: 2rem;
 }
 .home .header-text {
-  width: 50vw;
-  height: 30vh;
+  width: 70vw;
+  text-align: left;
+}
+.home .header-text .text {
+  color: white;
+  font-size: 4rem;
+}
+.home .header-text .text1,
+.home .header-text .text2 {
+  font-size: 7rem;
 }
 .home .home-arrow {
   width: 10vw;
@@ -358,7 +370,7 @@ nav div a:hover {
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
-  background-color: #8186d5;
+  background-color: #2D3648;
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 5rem;
@@ -375,7 +387,7 @@ nav div a:hover {
 .about h1,
 .about h2 {
   padding: 2rem 0;
-  color: white;
+  color: #ffac41;
 }
 .about .about-text {
   width: 60%;
@@ -388,56 +400,26 @@ nav div a:hover {
 .about .about-text .overview {
   padding-bottom: 5rem;
 }
-.about .about-text .skills {
-  padding: 5rem 0;
+.about .about-text .skills .skill-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 40vh;
 }
-.about .about-text .skills ul li {
-  padding-bottom: 1rem;
-  color: black;
+.about .about-text .skills .skill-icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
 }
-.about .about-text .skills ul li div {
-  background-color: greenyellow;
-  height: 2.5rem;
-  padding: 0.3rem;
-  padding-left: 1rem;
-  text-transform: uppercase;
-}
-.about .about-text .skills ul li div:hover.pulsate-fwd {
+.about .about-text .skills .skill-icons div:hover.pulsate-fwd {
   -webkit-animation: pulsate-fwd 0.5s ease-in-out both;
   animation: pulsate-fwd 0.5s ease-in-out both;
-}
-.about .about-text .skills #javascript {
-  background-color: greenyellow;
-  width: 50%;
-}
-.about .about-text .skills #react {
-  background-color: lavender;
-  width: 60%;
-}
-.about .about-text .skills #express {
-  background-color: lightpink;
-  width: 40%;
-}
-.about .about-text .skills #nodejs {
-  background-color: mediumturquoise;
-  width: 60%;
-}
-.about .about-text .skills #mongodb {
-  background-color: peachpuff;
-  width: 60%;
-}
-.about .about-text .skills #postgresql {
-  background-color: tomato;
-  width: 50%;
-}
-.about .about-text .skills #html-css {
-  background-color: yellow;
-  width: 40%;
 }
 .about .about-image {
   width: 25vw;
   height: 40vh;
-  border-radius: 5rem;
+  border-radius: 1rem;
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -462,12 +444,17 @@ nav div a:hover {
   min-width: 100vw;
   text-align: center;
   font-size: 1.8rem;
-  background-color: #e3e7f1;
+  background-color: #2D3648;
+  color: white;
   padding: 5rem 0;
 }
 .projects-page h1,
 .projects-page h2 {
   padding: 2rem 0;
+  color: #ffac41;
+}
+.projects-page h3 {
+  color: #ffac41;
 }
 .projects {
   display: flex;
@@ -510,7 +497,7 @@ nav div a:hover {
 .projects .project .project-overview,
 .projects .project .tech-stack,
 .projects .project .project-link {
-  border-bottom: 1px solid #8186d5;
+  border-bottom: 1px solid #ffac41;
   padding-bottom: 1rem;
 }
 .projects .project .project-link {
@@ -565,8 +552,8 @@ nav div a:hover {
 }
 .contact {
   height: 45vh;
-  background-color: #8186d5;
-  color: white;
+  background-color: #ffac41;
+  color: black;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -580,10 +567,10 @@ nav div a:hover {
 }
 .contact h1 {
   padding: 2rem 0;
-  color: white;
+  color: black;
 }
 .contact h4 {
-  color: white;
+  color: black;
 }
 .contact .social-icons {
   padding: 4rem;
