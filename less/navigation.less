@@ -7,10 +7,8 @@ nav {
     position: sticky;
     z-index: 1;
     top:0;
-    background-color: #2D3648;
+    background-color: #333F54;
     padding: 2.5rem 0;
-    // border-bottom: 1px solid #ffac41;
-    //opacity: 0.7;
 
     @media @tab {
         justify-content: center;
@@ -24,9 +22,14 @@ nav {
         
 
         a {
-            color: #ffac41;
+            color: white;
             &:hover{
-              border-bottom: 3px solid #ffac41;  
+                color: #ffac41;
+                border-bottom: 3px solid #ffac41;  
+            }
+
+            @media @phone {
+                color: #ffac41;
             }
             
         }
