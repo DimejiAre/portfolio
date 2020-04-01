@@ -206,7 +206,7 @@ nav div a {
 }
 nav div a:hover {
   color: #ffac41;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #ffac41;
 }
 @media (max-width: 763px) {
   nav div {
@@ -372,7 +372,7 @@ nav div a:hover {
   min-width: 100vw;
   display: flex;
   background-color: #333F54;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: space-between;
   padding: 5rem;
   font-size: 1.6rem;
@@ -391,7 +391,9 @@ nav div a:hover {
   color: #ffac41;
 }
 .about .about-text {
-  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
 }
 @media (max-width: 500px) {
   .about .about-text {
@@ -400,27 +402,9 @@ nav div a:hover {
 }
 .about .about-text .overview {
   padding: 0 2rem 4rem 2rem;
+  width: 60%;
 }
-.about .about-text .skills {
-  padding: 0 2rem;
-}
-.about .about-text .skills .skill-icons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 40vh;
-}
-.about .about-text .skills .skill-icons div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 25%;
-}
-.about .about-text .skills .skill-icons div:hover.pulsate-fwd {
-  -webkit-animation: pulsate-fwd 0.5s ease-in-out both;
-  animation: pulsate-fwd 0.5s ease-in-out both;
-}
-.about .about-image {
+.about .about-text .about-image {
   width: 25vw;
   height: 40vh;
   border-radius: 1rem;
@@ -432,9 +416,29 @@ nav div a:hover {
   background-size: cover;
 }
 @media (max-width: 500px) {
-  .about .about-image {
+  .about .about-text .about-image {
     width: 100%;
   }
+}
+.about .skills {
+  padding: 0 2rem;
+  padding-bottom: 50px;
+}
+.about .skills .skill-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.about .skills .skill-icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .skills .skill-icons div:hover.pulsate-fwd {
+  -webkit-animation: pulsate-fwd 0.5s ease-in-out both;
+  animation: pulsate-fwd 0.5s ease-in-out both;
 }
 .rotate90 {
   -webkit-transform: rotate(90deg);

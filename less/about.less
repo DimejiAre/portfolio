@@ -4,7 +4,7 @@
     min-width: 100vw;
     display: flex;
     background-color: #333F54;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-between;
     padding: 5rem;
     font-size: 1.6rem;
@@ -23,7 +23,9 @@
     }
 
     .about-text {
-        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
 
         @media @phone {
             width: 100%;
@@ -31,46 +33,46 @@
 
         .overview {
             padding: 0 2rem 4rem 2rem;
-            // background-color: #3B4961;
+            width: 60%;
         }
 
-        .skills {
-            // background-color: #242C3B;
-            padding: 0 2rem;
-
-            .skill-icons {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                height: 40vh;
-                
-                div {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 25%;
-
-                    &:hover{
-                        &.pulsate-fwd{-webkit-animation:pulsate-fwd .5s ease-in-out both;animation:pulsate-fwd .5s ease-in-out both}
-                    }
-                }
+        .about-image {
+            width: 25vw;
+            height: 40vh;
+            border-radius: 1rem;
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-image: url('../assets/images/me.png');
+            background-size: cover;
+    
+            @media @phone {
+                width: 100%;
             }
         }
     }
 
-    .about-image {
-        width: 25vw;
-        height: 40vh;
-        border-radius: 1rem;
-        margin-top: 2rem;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        background-image: url('../assets/images/me.png');
-        background-size: cover;
+    .skills {
+        padding: 0 2rem;
+        padding-bottom: 50px;
 
-        @media @phone {
+        .skill-icons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
             width: 100%;
+            
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &:hover{
+                    &.pulsate-fwd{-webkit-animation:pulsate-fwd .5s ease-in-out both;animation:pulsate-fwd .5s ease-in-out both}
+                }
+            }
         }
     }
 }
