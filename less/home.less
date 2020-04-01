@@ -11,6 +11,11 @@
     background-size: cover;
     background-color: #333F54;
 
+    @media @phone {
+        background-image: none;
+        width: 100%;
+    }
+
     h1, h2 {
         color: #ffac41;
         padding-bottom: 2rem;
@@ -23,9 +28,16 @@
         .text {
             color: white;
             font-size: 4rem;
+            @media @phone {
+                font-size: 3rem;
+            }
         }
         .text1, .text2 {
             font-size: 7rem;
+
+            @media @phone {
+                font-size: 5rem;
+            }
         }
     }
 
@@ -42,6 +54,10 @@
         .bounce-top {
             -webkit-animation: bounce-top 3s linear 5s 2 both;
                     animation: bounce-top 3s linear 5s 2 both;
+        }
+
+        @media @phone {
+            display: none;
         }
     }
 }
