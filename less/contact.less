@@ -1,12 +1,12 @@
 .contact {
-    height: 45vh;
+    max-height: 45vh;
     background-color: #ffac41;
     color: black;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 4rem;
 
     @media @tab{
         height: 55vh;
@@ -22,10 +22,15 @@
     }
 
     .social-icons {
-        padding: 4rem;
-        min-width: 40rem;
+        padding: 3rem;
+        width: 40rem;
         display: flex;
         justify-content: space-between;
+
+        @media @phone{
+            padding: 1rem 2rem;
+            width: 100vw;
+        }
 
         img {
             &:hover{
