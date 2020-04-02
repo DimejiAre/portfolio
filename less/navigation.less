@@ -19,8 +19,15 @@ nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
 
+        @media @tab {
+            min-width: 70vw;
+        }
+
+        @media @phone {
+            min-width: 90vw;
+        }
+        
         a {
             color: white;
             &:hover{
@@ -31,11 +38,7 @@ nav {
             @media @phone {
                 color: #ffac41;
             }
-            
-        }
-
-        @media @tab {
-            min-width: 50vw;
+ 
         }
     }
 }
