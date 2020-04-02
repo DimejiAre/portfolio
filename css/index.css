@@ -201,6 +201,16 @@ nav div {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 763px) {
+  nav div {
+    min-width: 70vw;
+  }
+}
+@media (max-width: 500px) {
+  nav div {
+    min-width: 90vw;
+  }
+}
 nav div a {
   color: white;
 }
@@ -211,11 +221,6 @@ nav div a:hover {
 @media (max-width: 500px) {
   nav div a {
     color: #ffac41;
-  }
-}
-@media (max-width: 763px) {
-  nav div {
-    min-width: 50vw;
   }
 }
 .home {
